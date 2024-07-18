@@ -19,13 +19,12 @@ Este es mi portafolio personal, donde muestro algunos de mis proyectos y habilid
 
 Aquí algunos de los proyectos destacados que puedes encontrar en mi portafolio:
 
-1. **Proyecto 1:** Breve descripción del proyecto y tecnologías utilizadas.
-2. **Proyecto 2:** Breve descripción del proyecto y tecnologías utilizadas.
-3. **Proyecto 3:** Breve descripción del proyecto y tecnologías utilizadas.
+1. **Proyecto 1:** Desarrollo web usando php puro y css, bootstrap 5 
+2. **Proyecto 2:** Desarrollo web usando html, css y js.
 
-## Capturas de Pantalla
+## Ver el sitio
 
-Incluir capturas de pantalla o enlaces a demostraciones de los proyectos en acción.
+[Incluir capturas de pantalla o enlaces a demostraciones de los proyectos en acción.](https://valentinsala.github.io/mi-portafolio/)
 
 ## Cómo Contribuir
 
