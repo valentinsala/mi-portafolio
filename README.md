@@ -33,7 +33,7 @@ Si tienes alguna sugerencia, mejora o pregunta, no dudes en abrir un issue o con
 
 ## Contacto
 
-- **Email:** tuemail@example.com
+- **Email:** vsalazar767@gmail.com
 - **LinkedIn:** [Valentín Salazar Mendoza](https://www.linkedin.com/in/valentinsala)
 
 ¡Gracias por visitar mi portafolio!
