@@ -24,7 +24,7 @@ Aquí algunos de los proyectos destacados que puedes encontrar en mi portafolio:
 
 ## Ver el sitio
 
-[Incluir capturas de pantalla o enlaces a demostraciones de los proyectos en acción.](https://valentinsala.github.io/mi-portafolio/)
+https://valentinsala.github.io/mi-portafolio/
 
 ## Cómo Contribuir
 
