@@ -28,7 +28,7 @@ https://valentinsala.github.io/mi-portafolio/
 
 ## Cómo Contribuir
 
-Si tienes alguna sugerencia, mejora o pregunta, no dudes en abrir un issue o contactarme directamente.
+Puedes usarlo libremente!
 
 ## Contacto
 
