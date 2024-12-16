@@ -1,232 +1,534 @@
-<!doctype html>
+<!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portafolio de Tecnologías de la Información - Experiencia en Soporte Técnico, Redes, Programación y Docencia">
-    <meta name="author" content="Valentin Salazar Mendoza">
-    <meta name="keywords" content="portafolio, tecnologías de la información, soporte técnico, redes, programación, docencia, IT">
-    <meta property="og:title" content="Portafolio de Tecnologías de la Información">
-    <meta property="og:description" content="Portafolio de Tecnologías de la Información - Experiencia en Soporte Técnico, Redes, Programación y Docencia">
-    <meta property="og:image" content="ruta/a/tu/imagen.jpg">
-    <meta property="og:url" content="https://tusitio.com">
-    <meta name="twitter:card" content="summary_large_image">
+    <!-- Configuración básica de la cabecera -->
+    <meta charset="utf-8" />
+    <!-- Establece el soporte para dispositivos móviles -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Breve descripción del sitio web -->
+    <meta
+      name="description"
+      content="Portafolio de Tecnologías de la Información - Experiencia en Soporte Técnico, Redes, Programación y Docencia"
+    />
+    <!-- Autor del sitio web -->
+    <meta name="author" content="Valentin Salazar Mendoza" />
+    <!-- Palabras clave para motores de búsqueda -->
+    <meta
+      name="keywords"
+      content="portafolio, tecnologías de la información, soporte técnico, redes, programación, docencia, IT"
+    />
+    <!-- Metadatos para compartir en redes sociales -->
+    <meta
+      property="og:title"
+      content="Portafolio de Tecnologías de la Información"
+    />
+    <meta
+      property="og:description"
+      content="Portafolio de Tecnologías de la Información - Experiencia en Soporte Técnico, Redes, Programación y Docencia"
+    />
+    <meta property="og:image" content="ruta/a/tu/imagen.jpg" />
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Título de la página -->
     <title>Portafolio - Tecnologías de la Información</title>
 
-    <link rel="icon" href="vendor/images/others/v.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/css/unicons.css">
-    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/css/tooplate-style.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- Icono de la página -->
+    <link rel="icon" href="vendor/images/others/v.png" />
+    <!-- Fuentes de Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hojas de estilo del proyecto -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/css/unicons.css" />
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="vendor/css/tooplate-style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+      .about-image img {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+      .about-image:hover img {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      .card-img-top {
+        transition: transform 0.3s ease; /* Efecto suave de transición */
+      }
 
-    
+      .card-img-top:hover {
+        transform: scale(
+          0.95
+        ); /* Reduce el tamaño de la imagen cuando se pase el cursor */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para dar profundidad */
+      }
+    </style>
   </head>
   <body>
 
+
+    <!-- Barra de navegación principal -->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container">
-          <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> valentinsala</a>
-  
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-              <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a href="#about" class="nav-link"><i class='uil uil-user-circle'></i><span data-hover="Perfil">Perfil</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#project" class="nav-link"><i class='uil uil-briefcase'></i><span data-hover="Proyectos">Proyectos</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#resume" class="nav-link"><i class='uil uil-file-alt'></i><span data-hover="Experiencia">Experiencia</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#contact" class="nav-link"><i class='uil uil-envelope'></i><span data-hover="Contacto">Contacto</span></a>
-                  </li>
-              </ul>
-  
-              <ul class="navbar-nav ml-lg-auto">
-                  <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                          <i class="color-mode-icon"></i>
-                          Color
-                      </div>
-                  </div>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  
-  
+        <!-- Logo o nombre del sitio -->
+        <a class="navbar-brand" href="index.html"
+          ><i class="uil uil-user"></i> valentinsala</a
+        >
 
-    <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <small class="small-text">Bienvenido a <span class="mobile-block">mi portafolio!</span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hola, Soy</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Ingeniero en TI </span>
-                                    <span class="animated-item">Diseñador web</span>
-                                    <span class="animated-item">Docente</span>
-                                </div>
-                        </h1>
+        <!-- Botón para desplegar el menú en dispositivos móviles -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                        <p>Ingeniero en Tecnologías de la Información con experiencia en Soporte Técnico, Redes, Programación y Docencia🔧</p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Descargar CV</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Contacto</a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <!-- Enlaces de navegación -->
+            <li class="nav-item">
+              <a href="#about" class="nav-link"
+                ><i class="uil uil-user-circle"></i
+                ><span data-hover="Perfil">Perfil</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link"
+                ><i class="uil uil-briefcase"></i
+                ><span data-hover="Proyectos">Proyectos</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link"
+                ><i class="uil uil-file-alt"></i
+                ><span data-hover="Experiencia">Experiencia</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"
+                ><i class="uil uil-envelope"></i
+                ><span data-hover="Contacto">Contacto</span></a
+              >
+            </li>
+          </ul>
 
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="vendor/images/others/ingeniero-informatico.png" class="img-fluid" alt="svg image">
-                    </div>
-                </div>
-
+          <ul class="navbar-nav ml-lg-auto">
+            <div class="ml-lg-4">
+              <!-- Botón de modo de color -->
+              <div
+                class="color-mode d-lg-flex justify-content-center align-items-center"
+              >
+                <i class="color-mode-icon"></i>
+                Color
+              </div>
             </div>
+          </ul>
         </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
-
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Sitios web que he diseñado a lo largo de mi experiencia laboral</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="vendor/images/others/1.webp" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="vendor/images/others/2.webp" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="vendor/images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="vendor/images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="vendor/images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-                      </div>
-
-                  </div>
-                </div>
-        </div>
-    </section>
-
-   <!-- FEATURES -->
-<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-  <div class="container">
-      <div class="row">
-
-          <div class="col-lg-6 col-12">
-              <h2 class="mb-4">Experiences</h2>
-
-              <div class="timeline">
-                  <div class="timeline-wrapper">
-                       <div class="timeline-yr">
-                            <span>2024</span>
-                       </div>
-                       <div class="timeline-info">
-                            <h3><span>Director de TI</span><small>EmpaqueMX</small></h3>
-                            <p>Gestión de proyectos de TI, estrategia de TI, y transformación digital.</p>
-                       </div>
-                  </div>
-
-                  <div class="timeline-wrapper">
-                      <div class="timeline-yr">
-                          <span>2023</span>
-                      </div>
-                      <div class="timeline-info">
-                          <h3><span>Profesor</span><small>Universidad Tecnológica de Zinacantepec</small></h3>
-                          <p>Enseñé programación orientada a objetos, desarrollo web, y ciberseguridad.</p>
-                      </div>
-                  </div>
-
-                  <div class="timeline-wrapper">
-                      <div class="timeline-yr">
-                          <span>2022</span>
-                      </div>
-                      <div class="timeline-info">
-                          <h3><span>Jefe de Proyectos de TI</span><small>SMIT</small></h3>
-                          <p>Optimización de proyectos de TI y mejora de la eficiencia operativa.</p>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-6 col-12">
-              <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
-              <div class="timeline">
-                  <div class="timeline-wrapper">
-                       <div class="timeline-yr">
-                            <span>2021</span>
-                       </div>
-                       <div class="timeline-info">
-                            <h3><span>Ingeniería, Tecnología de la Información</span><small>Universidad Tecnológica de Zinacantepec</small></h3>
-                            <p>(mayo de 2017 - mayo de 2021)</p>
-                       </div>
-                  </div>
-
-                  <div class="timeline-wrapper">
-                      <div class="timeline-yr">
-                          <span>2019</span>
-                      </div>
-                      <div class="timeline-info">
-                          <h3><span>Tecnico Superior Universitario, Tecnología de la Información y Comunicación: Comercio Electrónico</span><small>Universidad Tecnológica de Zinacantepec</small></h3>
-                          <p>(agosto de 2017 - mayo de 2019)</p>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
-          
       </div>
-  </div>
-</section>
+    </nav>
 
-  
+    <!-- Sección "Acerca de mí" -->
+    <section
+      class="about full-screen d-lg-flex justify-content-center align-items-center"
+      id="about"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Información personal -->
+          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+            <div class="about-text">
+              <small class="small-text"
+                >Bienvenido a
+                <span class="mobile-block">mi portafolio!</span></small
+              >
+              <h1 class="animated animated-text">
+                <span class="mr-2">Hola, Soy</span>
+                <div class="animated-info">
+                  <!-- Roles o profesiones destacados -->
+                  <span class="animated-item">Ingeniero en TI </span>
+                  <span class="animated-item">Diseñador web</span>
+                  <span class="animated-item">Docente</span>
+                </div>
+              </h1>
 
+              <!-- Breve presentación -->
+              <p>
+                Ingeniero en Tecnologías de la Información con experiencia en
+                Soporte Técnico, Redes, Programación y Docencia🔧
+              </p>
+
+              <!-- Botones de llamada a la acción -->
+              <div class="custom-btn-group mt-4">
+                <a href="#" class="btn mr-lg-2 custom-btn"
+                  ><i class="uil uil-file-alt"></i> Descargar CV</a
+                >
+                <a
+                  href="#contact"
+                  class="btn custom-btn custom-btn-bg custom-btn-link"
+                  >Contacto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Imagen destacada -->
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="about-image svg">
+              <img
+                src="vendor/images/others/ingeniero-informatico.png"
+                class="img-fluid opacity-75"
+                alt="svg image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section class="project py-5" id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 text-center mx-auto col-12">
+            <div class="col-lg-8 mx-auto">
+              <h2>
+                Sitios web que he diseñado a lo largo de mi experiencia laboral
+              </h2>
+            </div>
+
+            <!-- Carrusel de proyectos -->
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="project-info">
+                  <img
+                    src="vendor/images/others/1.webp"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="project-info">
+                  <img
+                    src="vendor/images/others/2.webp"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="project-info">
+                  <img
+                    src="vendor/images/project/project-image03.png"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="project-info">
+                  <img
+                    src="vendor/images/project/project-image04.png"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="project-info">
+                  <img
+                    src="vendor/images/project/project-image05.png"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center my-5">
+        <h1 class="display-4 fw-bold">Tecnologías</h1>
+        <hr class="w-50 mx-auto border-3 border-dark" />
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Tarjeta Angular -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/Angular.webp"
+                class="card-img-top rounded-top-4 card-img-top"
+                style="height: 350px"
+                alt="Angular"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Angular</h5>
+                <p class="card-text text-muted">
+                  Framework de desarrollo para aplicaciones web de una sola
+                  página.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta Bootstrap -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/Bootstrap.webp"
+                style="height: 320px"
+                class="card-img-top card-img-top rounded-top-4"
+                alt="Bootstrap"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Bootstrap</h5>
+                <p class="card-text text-muted">
+                  Framework CSS para diseño responsivo y rápido de interfaces
+                  web.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta CRM -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/crm.webp"
+                style="height: 25%"
+                class="card-img-top rounded-top-4 card-img-top"
+                alt="CRM"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title  fw-bold">CRM</h5>
+                <p class="card-text text-muted">
+                  Herramienta de gestión para relaciones con clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Tarjeta JavaScript -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/javascript.webp"
+                class="card-img-top rounded-top-4 card-img-top"
+                style="height: 350px"
+                alt="JavaScript"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-dark fw-bold">JavaScript</h5>
+                <p class="card-text text-muted">
+                  Lenguaje de programación para desarrollo web dinámico.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta Laravel -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/Laravel.webp"
+                class="card-img-top rounded-top-4"
+                style="height: 350px"
+                alt="Laravel"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-dark fw-bold">Laravel</h5>
+                <p class="card-text text-muted">
+                  Framework PHP para desarrollo de aplicaciones web robustas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta Python -->
+          <div class="col-4 mb-4">
+            <div
+              class="card shadow-lg rounded-4 border-0"
+              style="background-color: transparent"
+            >
+              <img
+                src="vendor/images/Tec/Python.webp"
+                class="card-img-top rounded-top-4 object-fit-cover"
+                style="height: 350px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title text-dark fw-bold">Python</h5>
+                <p class="card-text text-muted">
+                  <span>
+                    Lenguaje de programación versátil y fácil de aprender.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de experiencia profesional y educación -->
+    <section
+      class="resume py-5 d-lg-flex justify-content-center align-items-center"
+      id="resume"
+    >
+      <div class="container ">
+        <div class="row">
+          <!-- Experiencia profesional -->
+          <div class="col-lg-6 col-12 ">
+            <h2 class="mb-4">Experiencia profesional</h2>
+
+            <div class="timeline">
+              <!-- Entrada de línea de tiempo -->
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2023</span>
+                </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span>Coordinador de TI</span
+                    ><small>Casa Hogar Alegria</small>
+                  </h3>
+                  <p>
+                    Gestión de infraestructura, Salesforce CRM, Microsoft 365,
+                    soporte técnico, CCTV.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Entrada de línea de tiempo -->
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2024</span>
+                </div>
+                <div class="timeline-info">
+                  <h3><span>Director de TI</span><small>EmpaqueMX</small></h3>
+                  <p>
+                    Desarrollo web (PHP, Laravel, JavaScript, bootstrap 5),
+                    seguridad informática, optimización de infraestructura.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Más entradas de experiencia -->
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2023</span>
+                </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span>Profesor</span
+                    ><small>Universidad Tecnológica de Zinacantepec</small>
+                  </h3>
+                  <p>
+                    Docencia en programación (Python, Laravel, Angular),
+                    desarrollo web, programación orientada a objetos,
+                    ciberseguridad, protección de datos personales, lógica de
+                    programación.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2022</span>
+                </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span>Jefe de Proyectos de TI</span><small>SMIT</small>
+                  </h3>
+                  <p>
+                    Desarrollo web (PHP), ciberseguridad, CRM (Odoo), migración
+                    de sistemas, gestión de base de datos, desarrollo web (HTML,
+                    CSS, JS, Bootstrap 5).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Educación -->
+          <div class="col-lg-6 col-12">
+            <h2 class="mb-4 mobile-mt-2">Educación</h2>
+
+            <div class="timeline">
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2021</span>
+                </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span>Ingeniería, Tecnología de la Información</span
+                    ><small>Universidad Tecnológica de Zinacantepec</small>
+                  </h3>
+                  <p>(mayo de 2017 - mayo de 2021)</p>
+                </div>
+              </div>
+
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2019</span>
+                </div>
+                <div class="timeline-info">
+                  <h3>
+                    <span
+                      >Técnico Superior Universitario, Tecnología de la
+                      Información y Comunicación: Comercio Electrónico</span
+                    ><small>Universidad Tecnológica de Zinacantepec</small>
+                  </h3>
+                  <p>(agosto de 2017 - mayo de 2019)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts JS -->
     <script src="vendor/js/jquery-3.3.1.min.js"></script>
     <script src="vendor/js/popper.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
@@ -235,6 +537,5 @@
     <script src="vendor/js/owl.carousel.min.js"></script>
     <script src="vendor/js/smoothscroll.js"></script>
     <script src="vendor/js/custom.js"></script>
-
   </body>
 </html>
